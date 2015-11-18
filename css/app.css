@@ -4,3 +4,8 @@ body {
   text-align: center;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
+
+main {
+  margin: 0 auto;
+  width: 50vw;
+}
