@@ -4,7 +4,7 @@ myButton.addEventListener("click", function(event){
   var myInput = document.getElementsByTagName('input')[0];
   var myTarget = document.getElementsByTagName('section')[0];
   myTarget.innerText = getMessage(myInput.value * 1);
-  event.preventDefault();
+  event.preventDefault(); // or, form: "return false"
 });
 
 function getMessage(amt){
@@ -22,7 +22,7 @@ function getTipAmount(i){
       return i[x].value * 1;
     }
   }
-  return 0.2; // default like a gentleman.
+  return 0.2; // default to being a gentleman.
 }
 
 function isValidInput(i) {
